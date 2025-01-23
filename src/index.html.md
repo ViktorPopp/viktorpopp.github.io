@@ -5,6 +5,6 @@ title: Viktor Popp
 # VIKTOR
 
 - [About](/about)
-- [News](/news)
+- [Ideas](/ideas)
 - [Pages](/pages)
 - [Contact](/contact)
