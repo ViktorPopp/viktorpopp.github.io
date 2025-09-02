@@ -1,4 +1,8 @@
+// deno-lint-ignore-file jsx-button-has-type
 "use client";
+
+import React from "react";
+import { Page } from "../models";
 
 interface NavigationProps {
   currentPage: Page;

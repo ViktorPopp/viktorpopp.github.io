@@ -4,6 +4,7 @@ import { useState } from "react";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation";
+import { Page } from "./models";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>("home");
