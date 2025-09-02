@@ -17,8 +17,8 @@
   <!-- Terminal icon (scaled up from 24x24 to 64x64) -->
   <g transform="translate(32, 32) scale(2.67)">
     <!-- Terminal prompt line (>) -->
-    <path d="m4 17 6-6-6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="m4 17 6-6-6-6" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
     <!-- Terminal cursor line -->
-    <path d="M12 19h8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M12 19h8" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   </g>
 </svg>
