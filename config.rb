@@ -38,3 +38,17 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
+
+# When everything has been configured set the page titles
+ready do
+  sitemap.resources.each do |resource|
+    next unless resource.data.title.nil?
+
+    case resource.locals["page_type"]
+    when "tag"
+      resource.data.title = resource.locals["tagname"].capitalize
+    when "year", "month", "day"
+      resource.data.title = resource.locals[resource.locals["page_type"]].to_s
+    end
+  end
+end

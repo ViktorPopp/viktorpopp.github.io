@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title><%= [current_page.data.title, "Viktor Popp"].compact.uniq.join(" | ") %></title>
+
+    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :syntax %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+     <% unless page_classes == "index" %>
+        <nav aria-label="breadcrumb" role="navigation">
+          <%= breadcrumbs(current_page) %>
+        </nav>
+      <% end %>
+
+      <article>
+        <%= yield %>
+      </article>
+    </div>
+  </body>
+</html>
