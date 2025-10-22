@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@import "normalize";
+@import "gruvbox";
+@import "font";
+
+body {
+  font-weight: normal;
+  line-height: 1.4em;
+  min-height: 100vh;
+  font-size: 20px;
+}
+
+body.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    line-height: initial;
+    font-size: 10em;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    margin-left: 1em;
+    margin-top: 0.5em;
+  }
+
+  @media (max-width: 600px) {
+    article {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 33vw;
+    }
+  }
+}
+
+body:not(.index) {
+  h1::before {
+    content: "# ";
+  }
+  h2::before {
+    content: "## ";
+  }
+  h3::before {
+    content: "### ";
+  }
+}
+
+ul {
+  padding-left: 1em;
+
+  li::marker {
+    content: "* ";
+  }
+
+  p {
+    margin: 0;
+  }
+}

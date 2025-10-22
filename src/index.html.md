@@ -1,5 +1,3 @@
----
-title: Viktor
----
+# Viktor
 
-# Viktor Popp
+* [Pages](/pages)
