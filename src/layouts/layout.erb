@@ -5,7 +5,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title><%= [current_page.data.title, "Viktor Popp"].compact.uniq.join(" | ") %></title>
+    <title><%= [(["Viktor", "Viktor Popp"].include?(current_page.data.title) ? nil : current_page.data.title), "Viktor Popp"].compact.uniq.join(" | ") %></title>
 
     <%= stylesheet_link_tag :site %>
   </head>
