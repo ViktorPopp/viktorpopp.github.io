@@ -24,15 +24,6 @@ activate :syntax                          # Syntax highlighting for code blocks
 activate :directory_indexes               # Pretty URLs (e.g., /about/ instead of /about.html)
 activate :breadcrumbs, separator: " / "   # Breadcrumb navigation
 
-# Configure a blog in `/news`.
-activate :blog do |blog|
-  blog.prefix = "news"
-  # Use a specific layout for posts and templates for tags and calendars.
-  blog.layout = "layouts/news"
-  blog.tag_template = "news/tag.html"
-  blog.calendar_template = "news/calendar.html"
-end
-
 # When building for production minify CSS and JS for faster load times
 configure :build do
   activate :minify_css
