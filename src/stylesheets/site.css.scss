@@ -47,6 +47,8 @@ body.index {
 }
 
 body:not(.index) {
+  line-height: 1.6em;
+
   h1::before {
     content: "# ";
   }
@@ -75,6 +77,10 @@ ul {
   p {
     margin: 0;
   }
+}
+
+p {
+  margin: 1em 0;
 }
 
 h1 {

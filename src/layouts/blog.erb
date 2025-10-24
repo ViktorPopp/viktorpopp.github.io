@@ -15,12 +15,24 @@
       <% unless page_classes == "index" %>
         <nav aria-label="breadcrumb" role="navigation">
           <%= breadcrumbs(current_page) %>
+          (<%= current_article.date.strftime("%Y-%m-%d") %>)
         </nav>
       <% end %>
 
       <article>
         <%= yield %>
+
+        <p>Tags: <%= current_article.tags.map { |tag| link_to tag, tag_path(tag) }.join(", ") %></p>
       </article>
+
+      <aside>
+        <h2>Recent Articles</h2>
+        <ul>
+          <% blog.articles[0...5].each do |article| %>
+            <li><%= link_to article.title, article %> (<%= article.date.strftime("%Y-%m-%d") %>)</li>
+          <% end %>
+        </ul>
+      </aside>
     </div>
   </body>
 </html>
