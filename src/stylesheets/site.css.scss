@@ -6,7 +6,7 @@
 
 body {
   font-weight: normal;
-  line-height: 1.4em;
+  line-height: 1.6em;
   min-height: 100vh;
   font-size: 16px;
 }
@@ -47,8 +47,6 @@ body.index {
 }
 
 body:not(.index) {
-  line-height: 1.6em;
-
   h1::before {
     content: "# ";
   }
