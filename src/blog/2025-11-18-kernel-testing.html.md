@@ -11,3 +11,22 @@ kernel development is no exception. While testing userspace applications
 is familiar territory, testing in kernels presents its own challenges, and
 oppertunities. In this post we'll explore building a testing framework
 inside the kernel, so it becomes easier to maintain.
+
+## The Framework
+
+The first thing I do when I implement something new in my projects is always
+creating the header file. It helps with getting an overview of the new
+feature. Here we first define some data structures that our framework will use:
+
+```c
+typedef struct
+{
+    const char *name;
+    const char *group;
+    bool failed;
+
+    const char *reason;
+    const char *file;
+    uint32_t line;
+} test_result_t;
+```
