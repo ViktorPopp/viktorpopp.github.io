@@ -1,0 +1,5 @@
+<%= Rouge::Theme.find("gruvbox.dark").render(scope: ".highlight") %>
+
+@media (prefers-color-scheme: light) {
+  <%= Rouge::Theme.find("gruvbox.light").render(scope: ".highlight") %>
+}
