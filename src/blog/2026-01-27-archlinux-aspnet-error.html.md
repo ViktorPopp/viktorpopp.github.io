@@ -6,7 +6,7 @@ tags: ["dotnet", "csharp"]
 
 # Fixing "Prune Package data not found" in ASP.NET Core 10
 
-Recently ASP.NET Core 10 released. Abd with that I decided to try it out! But
+Recently ASP.NET Core 10 released. And with that I decided to try it out! But
 when I installed it on my [Arch Linux system](https://github.com/viktorPopp/dotfiles)
 showed this warning:
 
